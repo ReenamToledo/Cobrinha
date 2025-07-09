@@ -14,13 +14,15 @@ print(vetor)
 #Acionar vários elementos de uma vez
 vetor.extend([4,5])
 
-
 #Remover elementos
 vetor.remove("b")
 
 #Remover elemento ppor indice(posição)
 del vetor[2]
 #print(vetor)
+
+frutas = ["mpango", "maçã", "Banana", "Pêra", "Kiwi", "Pitaya", "Jaca"]
+frutas.pop(2)
 
 #Atualizar elementos
 #atribui um novo valor para a posição especíica
