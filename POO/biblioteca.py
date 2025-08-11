@@ -34,22 +34,23 @@ def main():
         Livro("Quem é Você, Alaska?", "João Verde")
     ]
 
-#socilitar nome do usuario
-nome = input("Digite o seu nome: ")
+    #socilitar nome do usuario
+    nome = input("Digite o seu nome: ")
 
-#exibir lista de livros disponíveis
-print("\n Livros disponíveis para empréstimo: ")
-for i, livro in enumerate(livros, start=1):
-    print(f" {i}. {livro.titulo} - {livro.autor}")
+    #exibir lista de livros disponíveis
+    print("\n Livros disponíveis para empréstimo: ")
+    for i, livro in enumerate(livros, start=1):
+        print(f" {i}. {livro.titulo} - {livro.autor}")
 
-#solicitar a escolha do livro peo usuário
-while True:
-    escolha = int(input("Digite o número do livro que deseja pegar emprestado: "))
-    
-    if 1 <= escolha len(livros):
-        livro_selecionado = livros[escolha -1]
-        break
-    else:
-    print(f"Por favor, digite um número entre 1 e {len(livros)}.")
-print(f"\n Empréstimo confirmado!")
-print(f"{nome} pegou em")
+    #solicitar a escolha do livro peo usuário
+    while True:
+        escolha = int(input("Digite o número do livro que deseja pegar emprestado: "))
+        
+        if 1 < escolha <= len(livros):
+            livro_selecionado = livros[escolha -1]
+            break
+        else:
+            print(f"Por favor, digite um número entre 1 e {len(livros)}.")
+
+    print(f"\n Empréstimo confirmado!")
+    print(f"{nome} pegou em")
