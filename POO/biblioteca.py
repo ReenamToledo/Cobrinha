@@ -33,3 +33,11 @@ def main():
         Livro("Jogos Vorazes", "Suzanne Collins"),
         Livro("Quem é Você, Alaska?", "João Verde")
     ]
+
+#socilitar nome do usuario
+nome = input("Digite o seu nome: ")
+
+#exibir lista de livros disponíveis
+print("\n Livros disponíveis para empréstimo: ")
+for i, livro in enumerate(livros, start=1):
+    print(f" {i}. {livr.titulo} - {livro.autor}") 
