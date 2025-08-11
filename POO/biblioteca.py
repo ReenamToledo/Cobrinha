@@ -46,8 +46,10 @@ for i, livro in enumerate(livros, start=1):
 while True:
     escolha = int(input("Digite o número do livro que deseja pegar emprestado: "))
     
-if 1 <= escolha len(livros):
-    livro_selecionado = livros[escolha -1]
-    break
-else:
-print(f"Por favor, digite um número entre 1 e {len(livros)}.")
+    if 1 <= escolha len(livros):
+        livro_selecionado = livros[escolha -1]
+        break
+    else:
+    print(f"Por favor, digite um número entre 1 e {len(livros)}.")
+print(f"\n Empréstimo confirmado!")
+print(f"{nome} pegou em")
