@@ -53,4 +53,6 @@ def main():
             print(f"Por favor, digite um número entre 1 e {len(livros)}.")
 
     print(f"\n Empréstimo confirmado!")
-    print(f"{nome} pegou em")
+    print(f"{nome} pegou emprestado o livro '{livro_selecionado.titulo}' de {livro_selecionado.autor}.")
+
+main()
